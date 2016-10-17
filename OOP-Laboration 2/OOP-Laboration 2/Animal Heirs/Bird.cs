@@ -7,7 +7,6 @@ namespace OOP_Laboration_2
 {
     public abstract class Bird : Animal
     {
-        public static int w
         public bool CanFly { get; set; }
 
         public Bird(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputCanFly) 

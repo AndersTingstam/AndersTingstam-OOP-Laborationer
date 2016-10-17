@@ -24,12 +24,14 @@ namespace OOP_Laboration_2
 
         public virtual void Talk()
         {
-            //Empty, like my fridge.
+            //Just incase I've forgotten some override somewhere
+            Console.WriteLine("Default answer");
         }
 
         public virtual void Move(int inputXPos, int inputYPos)
         {
-            //Void. Like my heart. *insert edgy emokid here*
+            //Just incase I've forgotten some override somewhere
+            Console.WriteLine("The unidentified animal won't move");
         }
 
         public virtual void Breed(Animal inputBreedingPartner)

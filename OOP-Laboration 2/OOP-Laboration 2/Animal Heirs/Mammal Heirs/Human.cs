@@ -23,6 +23,11 @@ namespace OOP_Laboration_2
                 Console.WriteLine("The human is sad since it has no dog. And therefore can't pet any.");
         }
 
+        public override void Talk()
+        {
+            Console.WriteLine("I have a boyfriend.");
+        }
+
         public override void Move(int inputXPos, int inputYPos)
         {
             Console.WriteLine("The human ignores your input on where it should go. It instead goes to the fridge, gets a huge coke and then returns to the computer.");

@@ -12,6 +12,7 @@ namespace OOP_Laboration_2
 
         static void Main(string[] args)
         {
+            //Den dagen jag gör sju listor för typ samma sak. Skjut mig. Jag gör en lista.
             List<Animal> animalList = new List<Animal>();
 
             for (int i = 0; i < HOW_MANY_RANDOMS; i++)

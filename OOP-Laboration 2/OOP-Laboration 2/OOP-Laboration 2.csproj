@@ -52,6 +52,7 @@
     <Compile Include="Animal Heirs\Mammal.cs" />
     <Compile Include="Animal Heirs\Bird Heirs\Parrot.cs" />
     <Compile Include="Animal Heirs\Mammal Heirs\Human.cs" />
+    <Compile Include="AnimalStats.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Animal Heirs\Reptile.cs" />
