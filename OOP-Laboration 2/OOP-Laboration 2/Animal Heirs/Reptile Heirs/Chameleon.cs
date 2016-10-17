@@ -18,5 +18,14 @@ namespace OOP_Laboration_2
         {
             Console.WriteLine("The chameleon adapts it's colors to the enviroment. It gains +10 on stealth checks for 5 turns.");
         }
+
+        public override List<string> ThingsToDo()
+        {
+            List<string> outputstring = base.ThingsToDo();
+
+            outputstring.Add("Camouflage");
+
+            return outputstring;
+        }
     }
 }

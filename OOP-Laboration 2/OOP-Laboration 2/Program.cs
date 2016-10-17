@@ -9,6 +9,9 @@ namespace OOP_Laboration_2
     class Program
     {
         public static int HOW_MANY_RANDOMS = 3;
+        public static int EVERYONE_HAS_FOUR_LIMBS = 4;
+        public static Random rng = new Random();
+
 
         static void Main(string[] args)
         {
@@ -17,7 +20,9 @@ namespace OOP_Laboration_2
 
             for (int i = 0; i < HOW_MANY_RANDOMS; i++)
             {
-                animalList.Add(new Kolibri(
+                animalList.Add(new Kolibri(rng.NextDouble() * (double)AnimalStats.birdWeightMax + (double)AnimalStats.birdWeightMin, rng.Next((int)AnimalStats.allAgeMin, (int)AnimalStats.birdAgeMax), EVERYONE_HAS_FOUR_LIMBS));
+                animalList.Add(new Parrot(rng.NextDouble() * (double)AnimalStats.birdWeightMax + (double)AnimalStats.birdWeightMin, rng.Next((int)AnimalStats.allAgeMin, (int)AnimalStats.birdAgeMax), EVERYONE_HAS_FOUR_LIMBS));
+                animalList.Add(new Dog(rng.NextDouble() * (double)AnimalStats.dogWeightMax + (double)AnimalStats.dogWeightMin, rng.Next((int)AnimalStats.allAgeMin, (int)AnimalStats.dogAgeMax), EVERYONE_HAS_FOUR_LIMBS));
             }
            
             Console.ReadKey();

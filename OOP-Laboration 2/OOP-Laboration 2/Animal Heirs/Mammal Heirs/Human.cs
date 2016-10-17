@@ -32,5 +32,14 @@ namespace OOP_Laboration_2
         {
             Console.WriteLine("The human ignores your input on where it should go. It instead goes to the fridge, gets a huge coke and then returns to the computer.");
         }
+
+        public override List<string> ThingsToDo()
+        {
+            List<string> outputstring = base.ThingsToDo();
+
+            outputstring.Add("Pet Dog");
+
+            return outputstring;
+        }
     }
 }

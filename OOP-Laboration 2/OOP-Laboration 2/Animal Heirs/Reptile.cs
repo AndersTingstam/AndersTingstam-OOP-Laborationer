@@ -8,6 +8,10 @@ namespace OOP_Laboration_2
     public abstract class Reptile : Animal
     {
         public bool IsColdBlooded { get; set; }
+        public int NumberOfLegs
+        {
+            get { return NumberOfLimbs; }
+        }
 
         public Reptile(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputIsColdBlooded)
             : base(inputWeight, inputAge, inputNumberOfLimbs)

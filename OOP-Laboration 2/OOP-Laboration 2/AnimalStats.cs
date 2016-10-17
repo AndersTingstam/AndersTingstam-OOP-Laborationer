@@ -9,8 +9,8 @@ namespace OOP_Laboration_2
     {
         birdWeightMin = 0,
         birdWeightMax = 4,
-        lizardWeightMin = 0,
-        lizardWeightMax = 1,
+        reptileWeightMin = 0,
+        reptileWeightMax = 1,
         dogWeightMin = 2,
         dogWeightMax = 25,
         catWeightMin = 2,
@@ -18,7 +18,12 @@ namespace OOP_Laboration_2
         humanWeightMin = 30,
         humanWeightMax = 120, //Lazily implemented a hardcoded cap.
         allAgeMin = 0,
-
+        birdAgeMax = 10,
+        dogAgeMax = 20,
+        catAgeMax = 20,
+        humanAgeMax = 100,
+        reptileAgeMax = 5,
+        
 
     }
 }

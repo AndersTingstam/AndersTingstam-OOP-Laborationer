@@ -8,10 +8,23 @@ namespace OOP_Laboration_2
     public abstract class Bird : Animal
     {
         public bool CanFly { get; set; }
+        public bool HasWings { get; set; }
+
+        public int NumberOfLegs
+        {
+            get
+            {
+                if (HasWings)
+                    return this.NumberOfLimbs - 2;
+                else
+                    return this.NumberOfLimbs;
+            }
+        }
 
         public Bird(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputCanFly) 
             : base(inputWeight, inputAge, inputNumberOfLimbs)
         {
+            HasWings = true; //I'm lazy now.
             CanFly = inputCanFly;
         }
 

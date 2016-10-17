@@ -27,5 +27,14 @@ namespace OOP_Laboration_2
         {
             Console.WriteLine("The dog runs fast as a motherhumper to X: " + inputXPos + " Y: " + inputYPos + ". VROOOOOOM");
         }
+
+        public override List<string> ThingsToDo()
+        {
+            List<string> outputstring = base.ThingsToDo();
+
+            outputstring.Add("Puppy Eyes");
+
+            return outputstring;
+        }
     }
 }
