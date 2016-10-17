@@ -8,7 +8,7 @@ namespace OOP_Laboration_2
     public class Chameleon : Reptile
     {
 
-        public Chameleon(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Chameleon(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
             : base(inputWeight, inputAge, inputNumberOfLimbs, true)
         {
 
@@ -26,6 +26,11 @@ namespace OOP_Laboration_2
             outputstring.Add("Camouflage");
 
             return outputstring;
+        }
+
+        public override string ToString()
+        {
+            return "Chameleon | " + base.ToString();
         }
     }
 }

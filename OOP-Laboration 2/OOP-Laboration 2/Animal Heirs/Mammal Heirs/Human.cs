@@ -9,7 +9,7 @@ namespace OOP_Laboration_2
     {
         public Dog DomesticatedDog { get; set; }
 
-        public Human(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Human(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
             : base(inputWeight, inputAge, inputNumberOfLimbs, true)
         {
 
@@ -40,6 +40,11 @@ namespace OOP_Laboration_2
             outputstring.Add("Pet Dog");
 
             return outputstring;
+        }
+
+        public override string ToString()
+        {
+            return "Human | " + base.ToString();
         }
     }
 }

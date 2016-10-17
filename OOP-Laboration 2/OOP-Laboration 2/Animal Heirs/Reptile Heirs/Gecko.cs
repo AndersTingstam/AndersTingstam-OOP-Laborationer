@@ -7,10 +7,15 @@ namespace OOP_Laboration_2
 {
     public class Gecko : Reptile
     {
-        public Gecko(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Gecko(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
             : base(inputWeight, inputAge, inputNumberOfLimbs, false)
         {
 
+        }
+
+        public override string ToString()
+        {
+            return "Gecko | " + base.ToString();
         }
     }
 }

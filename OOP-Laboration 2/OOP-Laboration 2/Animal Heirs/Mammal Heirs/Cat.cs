@@ -8,7 +8,7 @@ namespace OOP_Laboration_2
     public class Cat : Mammal
     {
 
-        public Cat(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Cat(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
             : base(inputWeight, inputAge, inputNumberOfLimbs, false)
         {
 
@@ -22,6 +22,11 @@ namespace OOP_Laboration_2
         public override void Move(int inputXPos, int inputYPos)
         {
             Console.WriteLine("The cat looks where it is suppsed to go. It decides to not give a shit and lie down in the sun");
+        }
+
+        public override string ToString()
+        {
+            return "Cat | " + base.ToString();
         }
     }
 }

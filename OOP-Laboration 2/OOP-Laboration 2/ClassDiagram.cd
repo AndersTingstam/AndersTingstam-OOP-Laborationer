@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OOP_Laboration_2.Animal">
-    <Position X="9" Y="0.5" Width="1.5" />
+    <Position X="9" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAIAAAAAAAEAAAAAAACAAAAAAAEAAAIIAAAA=</HashCode>
+      <HashCode>AQAAAAAAAIAAAAAEAEAAAAAAACAAAAAAAEAAAIIAAAA=</HashCode>
       <FileName>Animal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Mammal">
-    <Position X="9" Y="4.25" Width="1.5" />
+    <Position X="9" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Mammal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Reptile">
-    <Position X="10.75" Y="4.25" Width="1.5" />
+    <Position X="12.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAIAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Reptile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Bird">
-    <Position X="7.25" Y="4.25" Width="1.5" />
+    <Position X="5.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAIAAIAAAAAAAAAAgACAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Bird.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Dog">
-    <Position X="7.5" Y="8" Width="1.5" />
+    <Position X="7.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAEAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAEAAAAAAAAACAAAAAAAEAAAQAAAAA=</HashCode>
       <FileName>Animal Heirs\Mammal Heirs\Dog.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Cat">
-    <Position X="10.5" Y="8" Width="1.5" />
+    <Position X="10.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Mammal Heirs\Cat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Gecko">
-    <Position X="12.25" Y="8" Width="1.5" />
+    <Position X="12.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Reptile Heirs\Gecko.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Parrot">
-    <Position X="5.75" Y="8" Width="1.5" />
+    <Position X="5.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Bird Heirs\Parrot.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Kolibri">
-    <Position X="4.25" Y="8" Width="1.5" />
+    <Position X="4.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Bird Heirs\Kolibri.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Chameleon">
-    <Position X="13.75" Y="8" Width="1.5" />
+    <Position X="13.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Reptile Heirs\Chameleon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_2.Human">
-    <Position X="9" Y="8" Width="1.5" />
+    <Position X="9" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABAACIAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAACIAAAAAEAAAAAAAAACAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Animal Heirs\Mammal Heirs\Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="OOP_Laboration_2.AnimalStats">
-    <Position X="12.75" Y="0.5" Width="1.5" />
+    <Position X="15.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAYAQAAAhgCAACAAAAAAASAAAAAAAAgAAAAgAQAAA=</HashCode>
       <FileName>AnimalStats.cs</FileName>

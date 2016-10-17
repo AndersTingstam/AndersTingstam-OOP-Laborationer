@@ -13,7 +13,7 @@ namespace OOP_Laboration_2
             get { return NumberOfLimbs; }
         }
 
-        public Reptile(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputIsColdBlooded)
+        public Reptile(decimal inputWeight, int inputAge, int inputNumberOfLimbs, bool inputIsColdBlooded)
             : base(inputWeight, inputAge, inputNumberOfLimbs)
         {
             IsColdBlooded = inputIsColdBlooded;

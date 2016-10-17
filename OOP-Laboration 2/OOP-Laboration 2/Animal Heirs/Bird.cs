@@ -21,7 +21,7 @@ namespace OOP_Laboration_2
             }
         }
 
-        public Bird(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputCanFly) 
+        public Bird(decimal inputWeight, int inputAge, int inputNumberOfLimbs, bool inputCanFly) 
             : base(inputWeight, inputAge, inputNumberOfLimbs)
         {
             HasWings = true; //I'm lazy now.
@@ -49,6 +49,5 @@ namespace OOP_Laboration_2
 
             return outputstring;
         }
-
     }
 }

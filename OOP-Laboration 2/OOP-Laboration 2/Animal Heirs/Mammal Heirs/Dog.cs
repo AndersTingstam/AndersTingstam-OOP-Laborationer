@@ -7,7 +7,7 @@ namespace OOP_Laboration_2
 {
     public class Dog : Mammal
     {
-        public Dog(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Dog(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
             : base(inputWeight, inputAge, inputNumberOfLimbs, false)
         {
             
@@ -35,6 +35,11 @@ namespace OOP_Laboration_2
             outputstring.Add("Puppy Eyes");
 
             return outputstring;
+        }
+
+        public override string ToString()
+        {
+            return "Dog | " + base.ToString();
         }
     }
 }

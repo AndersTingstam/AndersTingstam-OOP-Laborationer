@@ -8,12 +8,12 @@ namespace OOP_Laboration_2
     public abstract class Animal
     {
         public bool IsAlive { get; set; }
-        public double Weight { get; set; }
+        public decimal Weight { get; set; }
         public int Age { get; set; }
         public int NumberOfLimbs { get; set; }
         public List<string> Activities { get; set; }
 
-        public Animal(double inputWeight, int inputAge, int inputNumberOfLimbs)
+        public Animal(decimal inputWeight, int inputAge, int inputNumberOfLimbs)
         {
             this.IsAlive = true;
             Weight = inputWeight;
@@ -51,6 +51,11 @@ namespace OOP_Laboration_2
             outputString.Add("Breed");
 
             return outputString;
+        }
+
+        public override string ToString()
+        {
+            return this.Weight.ToString("F2") + " kg | " + this.Age + " years old";
         }
     }
 }

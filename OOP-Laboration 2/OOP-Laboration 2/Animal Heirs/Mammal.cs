@@ -20,7 +20,7 @@ namespace OOP_Laboration_2
             }
         }
 
-        public Mammal(double inputWeight, int inputAge, int inputNumberOfLimbs, bool inputHasHands)
+        public Mammal(decimal inputWeight, int inputAge, int inputNumberOfLimbs, bool inputHasHands)
             : base(inputWeight, inputAge, inputNumberOfLimbs)
         {
             HasHands = inputHasHands;
