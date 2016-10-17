@@ -1,1 +1,6 @@
 D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\bin\Debug\OOP-Laboration 2.exe.config
+D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\obj\Debug\OOP-Laboration 2.csprojResolveAssemblyReference.cache
+D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\bin\Debug\OOP-Laboration 2.exe
+D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\bin\Debug\OOP-Laboration 2.pdb
+D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\obj\Debug\OOP-Laboration 2.exe
+D:\Users\drang\Documents\Visual Studio 2015\AndersTingstam-Laborationer\OOP-Laboration 2\OOP-Laboration 2\obj\Debug\OOP-Laboration 2.pdb
