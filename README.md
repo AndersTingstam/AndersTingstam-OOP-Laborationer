@@ -1,2 +1,2 @@
-# AndersTingstam-OOP-Laborationer
+# Anders Tingstams Laborationsrepo för Objektsorienterad Programmering.
 
