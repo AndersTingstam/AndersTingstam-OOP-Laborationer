@@ -8,7 +8,7 @@ namespace OOP_Laboration_2
 {
     class Program
     {
-        public static int HOW_MANY_RANDOMS = 8;
+        public static int HOW_MANY_RANDOMS = 3;
         public static int EVERYONE_HAS_FOUR_LIMBS = 4;
         public static Random rng = new Random();
 
@@ -118,6 +118,8 @@ namespace OOP_Laboration_2
 
                 userinput = Utilities.GetStringInput("So what do you wanna do?\n\n");
 
+                //Somehow figure out a good general function here.
+
                 switch (userinput.ToLower())
                 {
                     case "1":
@@ -146,11 +148,9 @@ namespace OOP_Laboration_2
                     case "abort":
                         break;
                 }
+                //Placeholder
+                return new Dog(1, 1, 4);
             }
-
-            Console.ReadKey();
-
-            return new Dog(1, 1, 4);
 
         }
 
