@@ -7,5 +7,11 @@ namespace OOP_Laboration_3
 {
     public class Concert : Event
     {
+        public Concert() : base()
+        {
+            Type = "Concert";
+            Name = RandomiseName();
+        }
+
     }
 }

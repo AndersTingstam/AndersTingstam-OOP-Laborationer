@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Laboration_2
+namespace OOP_Laboration_3
 {
     static class Utilities
     {
@@ -24,7 +24,6 @@ namespace OOP_Laboration_2
                 try
                 {
                     string outputString = Console.ReadLine();
-
                     if (outputString.ToLower() == "exit" || outputString.ToLower() == "quit")
                         Environment.Exit(0);
                     else

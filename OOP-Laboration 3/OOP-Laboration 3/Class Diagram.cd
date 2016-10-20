@@ -1,50 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OOP_Laboration_3.Event">
-    <Position X="7.25" Y="2.75" Width="1.5" />
+    <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQBBAAAAAAAAQCAAAAAAAA=</HashCode>
       <FileName>Event.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_3.Festival">
-    <Position X="7.25" Y="4.5" Width="1.5" />
+    <Position X="7.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Event Heirs\Festival.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_3.Concert">
-    <Position X="9.25" Y="4.5" Width="1.5" />
+    <Position X="10" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Event Heirs\Concert.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_3.Film">
-    <Position X="5.25" Y="4.5" Width="1.5" />
+    <Position X="5.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Event Heirs\Film.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOP_Laboration_3.Person">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+    <Position X="4.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOP_Laboration_3.Ticket">
-    <Position X="6" Y="1" Width="1.5" />
+  <Class Name="OOP_Laboration_3.Booking">
+    <Position X="4.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ticket.cs</FileName>
+      <FileName>Booking.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Person" />
       <Property Name="Event" />
     </ShowAsAssociation>
   </Class>
+  <Struct Name="OOP_Laboration_3.RandomShit" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAA=</HashCode>
+      <FileName>RandomShit.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

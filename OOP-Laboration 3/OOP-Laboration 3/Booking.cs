@@ -5,8 +5,9 @@ using System.Text;
 
 namespace OOP_Laboration_3
 {
-    public class Person
+    public class Booking
     {
-        public string Name { get; set; }
+        public Person Person { get; set; }
+        public Event Event { get; set; }
     }
 }
