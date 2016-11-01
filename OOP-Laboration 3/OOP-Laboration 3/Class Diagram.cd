@@ -3,7 +3,7 @@
   <Class Name="OOP_Laboration_3.Event">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQBBAAAAAAAAQCAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQBBAAAAAAhAQGAAAAAAAA=</HashCode>
       <FileName>Event.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -46,12 +46,5 @@
       <Property Name="Event" />
     </ShowAsAssociation>
   </Class>
-  <Struct Name="OOP_Laboration_3.RandomShit" Collapsed="true">
-    <Position X="12.5" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAA=</HashCode>
-      <FileName>RandomShit.cs</FileName>
-    </TypeIdentifier>
-  </Struct>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OOP_Laboration_3
 {
-    public struct RandomShit
+    public class RandomShit
     {
         public static Random rng = new Random();
 

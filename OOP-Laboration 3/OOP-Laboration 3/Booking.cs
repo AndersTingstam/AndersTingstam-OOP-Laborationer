@@ -9,5 +9,11 @@ namespace OOP_Laboration_3
     {
         public Person Person { get; set; }
         public Event Event { get; set; }
+
+        public Booking(Person inputPerson, Event inputEvent)
+        {
+            Person = inputPerson;
+            Event = inputEvent;
+        }
     }
 }

@@ -33,10 +33,10 @@ namespace OOP_Laboration_3
             DateTime tempDate = new DateTime();
             tempDate = DateTime.Now;
 
-            tempDate.AddYears(RandomShit.rng.Next(0, 5));
-            tempDate.AddMonths(RandomShit.rng.Next(-6, 6));
-            tempDate.AddDays((RandomShit.rng.NextDouble() - 0.5) * 180);
-            tempDate.AddHours((RandomShit.rng.NextDouble() - 0.5) * 12);
+            tempDate = tempDate.AddYears(RandomShit.rng.Next(0, 5));
+            tempDate = tempDate.AddMonths(RandomShit.rng.Next(-6, 6));
+            tempDate = tempDate.AddDays((RandomShit.rng.NextDouble() - 0.5) * 180);
+            tempDate = tempDate.AddHours((RandomShit.rng.NextDouble() - 0.5) * 12);
 
             return tempDate;
         }
@@ -52,6 +52,11 @@ namespace OOP_Laboration_3
                 default: return "LoL";
                
             }
+        }
+
+        public override string ToString()
+        {
+            return String.Format("{0,-40} {1,-8} {2,40}", this.Name, this.Type, this.Date);
         }
     }
 }

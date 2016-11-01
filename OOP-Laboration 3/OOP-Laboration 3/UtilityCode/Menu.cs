@@ -6,21 +6,68 @@ using System.Threading.Tasks;
 
 namespace OOP_Laboration_3
 {
-    class Menu
+    class Menu : List<string>
     {
+
+        #region Properties
+
+        public string Header { get; set; }
+
+        public string Footer{ get; set; }
+
+        public int Counter { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Header and Footer are declared as parameters. Body is added as a List&lt;string&gt;.
+        /// </summary>
+        public Menu(string inputHeader = "", string inputFooter = "", int inputCounter = 1)
+        {
+            Header = inputHeader;
+            Footer = inputFooter;
+            Counter = inputCounter;
+        }
+
+        #endregion
+
+        #region Instance Methods
+
+        public string FormatMenu()
+        {
+            return FormatMenu(this);
+        }
+
+        public List<string> FormatNumberedMenu()
+        {
+            return FormatNumberedMenu(this, this.Counter);
+        }
+
+
+        public int GetListNumberInputChoice()
+        {
+            return GetListNumberInputChoice(this, this.Header, this.Footer, this.Counter);
+        }
+
+        #endregion
+
+        #region Static Methods
+
         public static string FormatMenu(List<string> inputStringList)
         {
             string outputString = "";
 
             foreach(string s in inputStringList)
             {
-                outputString += s;
+                outputString += s + Environment.NewLine;
             }
 
             return outputString;
         }
 
-        public static List<string> FormatNumberedMenu(List<string>inputStringList, int counter = 0)
+        public static List<string> FormatNumberedMenu(List<string>inputStringList, int counter = 1)
         {
             List<string> outputStringList = new List<string>();
 
@@ -33,7 +80,7 @@ namespace OOP_Laboration_3
             return outputStringList;
         }
 
-        public static int GetListNumberInputChoice(List<string> inputStringList, string inputTitle = "", string inputPostScriptum = "\nPlease Select a number: ", int counter = 0)
+        public static int GetListNumberInputChoice(List<string> inputStringList, string inputTitle = "", string inputPostScriptum = "\nPlease Select a number: ", int counter = 1)
         {
             int outputInt = -1;
 
@@ -50,5 +97,7 @@ namespace OOP_Laboration_3
 
             return outputInt;
         }
+
+        #endregion
     }
 }
