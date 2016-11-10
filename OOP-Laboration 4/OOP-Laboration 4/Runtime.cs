@@ -11,7 +11,7 @@ namespace OOP_Laboration_4
     {
         public List<Vehicle> vehicleList = new List<Vehicle>();
         public Menu mainMenu = new Menu("Bosse's Cars 'n' Bikes. \n", "\nPlease select an action.\nWrite exit to quit the program.\n\n : ") { "Add vehicle.", "List vehicles and/or remove vehicles" };
-        public Menu addVehicleMenu = new Menu("Add a vehicle.\n", "\nPlease select an action.\nWrite exit to quit the program.\n\n : ") { "Add car", "Add bike", "Back" }; 
+        public Menu addVehicleMenu = new Menu("Add a vehicle.\n", "\nPlease select an action.\nWrite exit to quit the program.\n\n : ") { "Add car", "Add bike", "Back" };
 
         //Might just need to make a direct listing here.
         //public Menu removeMenu = new Menu(" Remove a vehicle.\n", " Please select an action.\n Write exit to quit the program.\n\n") { "Remove , "Back" };
@@ -26,15 +26,17 @@ namespace OOP_Laboration_4
 
                 switch (mainMenu.GetListNumberInputChoice())
                 {
-                    case 1: addVehicleMenuMethod(); break;
-                    case 2: listRemoveVehicleMenuMethod(); break;
+                    case 1: AddVehicleMenuMethod(); break;
+                    case 2: ListRemoveVehicleMenuMethod(); break;
                 }
 
             }
 
         }
 
-        public int addVehicleMenuMethod()
+        #region Menus, ugly menus everywhere
+
+        public int AddVehicleMenuMethod()
         {
             Console.Clear();
 
@@ -42,14 +44,33 @@ namespace OOP_Laboration_4
             {
                 switch (addVehicleMenu.GetListNumberInputChoice())
                 {
-                    case 1: break;
-                    case 2: break;
+                    case 1: vehicleList.Add(AddVehicle("car")); break;
+                    case 2: vehicleList.Add(AddVehicle("motorcycle")); break;
                     case 3: return 0;
                 }
             }
         }
+        public Vehicle AddVehicle(string inputVehicleType)
+        {
+            Vehicle tempvehicle;
 
-        public int listRemoveVehicleMenuMethod()
+            if (inputVehicleType == "car")
+                tempvehicle = new Car();
+            else if (inputVehicleType == "motorcycle")
+                tempvehicle = new Motorcycle();
+            else
+                tempvehicle = new Car();
+                     
+            Console.Clear();
+            tempvehicle.Brand = Utils.GetStringInput("Welcome to the nice interface to add a vehicle.\n\nPlease enter the Brand of the vehicle : ");
+            tempvehicle.Model = Utils.GetStringInput("\nPlease enter the Model of the vehicle : ");
+            tempvehicle.IsUsed = Utils.GetBoolInput("\nIs the car a used vehicle? Yes/No : ");
+            tempvehicle.Price = Utils.GetIntInput("\nAnd lastly, what is the price of the vehicle? : ");
+            
+            return tempvehicle;
+        }
+
+        public int ListRemoveVehicleMenuMethod()
         {
             Console.Clear();
             int tempInt = Menu.GetListNumberInputChoice(vehicleList
@@ -62,7 +83,9 @@ namespace OOP_Laboration_4
             try
             {
                 vehicleList.RemoveAt(tempInt - 1);
+                ListRemoveVehicleMenuMethod();
             }
+
             catch(Exception e)
             {
 
@@ -71,12 +94,16 @@ namespace OOP_Laboration_4
             return 0;
         }
 
-
+        #endregion
 
         #region Filling Methods
 
         public void fillLists()
         {
+            vehicleList.Add(new Car { Brand = "BMW", IsUsed = false, Model = "GT500", Price = 500000 });
+            vehicleList.Add(new Car { Brand = "Ford", IsUsed = false, Model = "Viper", Price = 1000000 });
+            vehicleList.Add(new Car { Brand = "Volvo", IsUsed = true, Model = "240", Price = 20000 });
+
             vehicleList.Add(new Car { Brand = "BMW", IsUsed = false, Model = "GT500", Price = 500000 });
             vehicleList.Add(new Car { Brand = "Ford", IsUsed = false, Model = "Viper", Price = 1000000 });
             vehicleList.Add(new Car { Brand = "Volvo", IsUsed = true, Model = "240", Price = 20000 });
