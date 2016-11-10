@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utilities
 {
-    class Utils
+    public class Utils
     {
         #region Utility Methods
 
@@ -43,13 +43,28 @@ namespace Utilities
 
                 catch (FormatException e)
                 {
-                    Console.WriteLine("Foo! You were supposed to enter a number! Nothing else.");
+                    Console.WriteLine("Foo! You are supposed to enter a number! Nothing else.");
                 }
 
                 catch (Exception e)
                 {
                     Console.WriteLine("I have no clue how we ended up here. But by now I'm too afraid to ask");
                 }
+            }
+        }
+
+        static public bool GetBoolInput(string WhatToWriteToUser)
+        {
+            while (true)
+            {
+                string tempString = GetStringInput(WhatToWriteToUser);
+
+                if (tempString.ToLower() == "yes" || tempString.ToLower() == "y")
+                    return true;
+                else if (tempString.ToLower() == "no" || tempString.ToLower() == "n")
+                    return false;
+                else
+                    Console.WriteLine("Foo! You are supposed to answer with yes or no!");
             }
         }
 

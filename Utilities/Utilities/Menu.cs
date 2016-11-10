@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utilities
 {
-    class Menu : List<string>
+    public class Menu : List<string>
     {
 
         #region Properties
