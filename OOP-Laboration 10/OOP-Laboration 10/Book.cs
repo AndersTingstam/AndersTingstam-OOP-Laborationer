@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Laboration_10
 {
-    class Book
+    public class Book
     {
         public string Title { get; set; }
         public int Pages { get; set; }
