@@ -24,12 +24,27 @@ namespace OOP_Laboration_10
 
             bookManager.PrintWhere(isCheapFilter);
 
-            Console.WriteLine("\n === Romance Novels === \n\n");
 
-            bookManager.PrintWhere(isRomanceFilter && isNovelFilter);
+            //Combining filters
+            Console.WriteLine("\n\n === Fantasy === \n");
+
+            bookManager.PrintWhere(new List<BookFilter> { isFantasyFilter });
+
+            Console.WriteLine("\n\n === Cheap Novels === \n");
+
+            bookManager.PrintWhere(new List<BookFilter> { isCheapFilter, isNovelFilter });
+
+            Console.WriteLine("\n\n === Cheap Mystery Novels === \n");
+
+            bookManager.PrintWhere(new List<BookFilter> { isCheapFilter, isMysteryFilter, isNovelFilter });
+
+            Console.WriteLine("\n\n === Expensive Fantasy Shortstories === \n");
+
+            bookManager.PrintWhere(new List<BookFilter> { isExpensiveFilter, isFantasyFilter, isShortStoryFilter });
+
+            //TODO : Write user menu interface where they can add and remove filters freely from the list of filters.
 
             Console.ReadKey();
-
         }
 
     }

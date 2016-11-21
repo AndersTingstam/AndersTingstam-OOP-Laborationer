@@ -17,7 +17,9 @@ namespace OOP_Laboration_10
                 new Book { Title = "Harry Potter and the Goblet of Fire", Genre = "Fantasy", Pages = 458, Price = 399 },
                 new Book { Title = "Eragon", Genre = "Fantasy", Pages = 375, Price = 259 },
                 new Book { Title = "Morden i Midsomer", Genre = "Mystery", Pages = 89, Price = 59 },
-                new Book { Title = "Ida och Adam", Genre = "Romance", Pages = 149, Price = 49 }
+                new Book { Title = "Eva och Adam", Genre = "Romance", Pages = 149, Price = 49 },
+                new Book { Title = "Harry Potter and the Sorcerer's Stone", Genre = "Fantasy", Pages = 253, Price = 49 },
+                new Book { Title = "It was the Butler who did it!", Genre = "Mystery", Pages = 159, Price = 29 }
             };
         }
 
@@ -30,12 +32,27 @@ namespace OOP_Laboration_10
             }
         }
 
+        //Overloaded method with possibility to take a list of filters.
         public void PrintWhere(List<BookFilter> filterList)
         {
-            Console.WriteLine(Books
-                .Where(Book => filterList
-                .Where(BookFilter => BookFilter(Book).Equals())
-                .Select(Book => Book.Title);
+            List<string> tempList = Books
+                .Where(book => filterList
+                    .TrueForAll(filter => filter(book)))
+                .Select(book => book.Title)
+                .ToList();
+
+            if (tempList.Count == 0)
+            {
+                Console.WriteLine("None");
+            }
+
+            else
+            {
+                foreach (string s in tempList)
+                {
+                    Console.WriteLine(s);
+                }
+            }
         }
     }
 }

@@ -26,7 +26,7 @@ namespace OOP_Laboration_10
         }
         public static bool IsGenreRomance(Book book)
         {
-            return book.Genre == "Romance";
+            return book.Genre == "Romance"; 
         }
         public static bool IsCheap(Book book)
         {
